@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Program Boarder Builder</title>
+    <script src="./d3.v3.min.js"></script>
+    <script src="./main.js"></script>
+    <style>
+        .container {
+            width: 100%;
+            position: relative;
+            margin: 0 100px;
+
+        }
+        #left {
+            float: left;
+            width: 50%;
+        }
+
+        #left #markdown {
+            min-width: 300px;
+        }
+
+        #main{	
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+        .begin{
+           stroke:solid;
+        }
+        .finish{
+            stroke-dasharray: 5,5; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Program Boarder</h1>
+    <hr>
+    <div class="container">
+        <div id="left">
+            <textarea id="markdown" rows="50" cols="80"></textarea>
+            <div>
+            <button id="render" onclick="render()">Render</button>
+            <button id='download' disabled onclick="download()">Export PNG</button>
+            </div>
+        </div>
+        <div id="main">
+        </div>
+    </div>
+</body>
+</html>
