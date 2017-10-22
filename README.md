@@ -1,0 +1,2 @@
+# Overview
+This project is aimed to draw the so called "Program Board", in the [SAFe](http://www.scaledagileframework.com/), like [mermaid](https://mermaidjs.github.io/), it is designed to be data-driven. So that scrum masters or agile coaches won't suffer from drawing the 'Program Board'.
